@@ -1,4 +1,4 @@
-I use chatGPT as a supplementary
+I use tools such as documentation and AI assistance to better understand syntax errors or logic issues.
 
 This program also acts as a refresher for me, before creating this document I had an error in the visual studio code terminal because I did not create a project for the file to be inside of, which also made it so that I did not receive errors while creating the code(via the red squiggly lines). 
 
