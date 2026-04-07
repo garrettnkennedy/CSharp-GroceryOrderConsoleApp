@@ -161,19 +161,25 @@ class Program
     static string ReadRequiredString(string message)
     {
         Console.Write(message);
+        while (true)
+        {
 
-        string? input = Console.ReadLine();/* the ? in string? means the input is
+            string? input = Console.ReadLine();/* the ? in string? means the input is
      allowed be null unlike string input */
 
-        if (input is null)/*"is" is different than == in that unlike == it cannot be 
-    overloaded */
-        {
-            Console.WriteLine("Unexpected end of input. Exiting...");
-            Environment.Exit(1);/*1 is an exit code, 0 would be typed if program exited 
-        normally while 1 means it exited due to an error*/
-        }
+            if (input is null)//"is" is different than == in that unlike == it cannot be overloaded. Also this if statement is not outside of the while (true) statement because it is important to make sure the input is not null BEFORE it checks if it is empty.
+            {
+                Console.WriteLine("Unexpected end of input. Exiting...");
+                Environment.Exit(1);//1 is an exit code, 0 would be typed if program exited normally while 1 means it exited due to an error
+            }
 
-        return input;
+            if (input.Trim() == "")
+            {
+                Console.WriteLine("Input cannot be empty or just spaces.");
+            }
+
+            return input;
+        }
     }
     static string ReadPhoneNumber(string message)
     {
