@@ -164,8 +164,7 @@ class Program
         while (true)
         {
 
-            string? input = Console.ReadLine();/* the ? in string? means the input is
-     allowed be null unlike string input */
+            string? input = Console.ReadLine();// the ? in string? means the input is allowed be null unlike string input
 
             if (input is null)//"is" is different than == in that unlike == it cannot be overloaded. Also this if statement is not outside of the while (true) statement because it is important to make sure the input is not null BEFORE it checks if it is empty.
             {

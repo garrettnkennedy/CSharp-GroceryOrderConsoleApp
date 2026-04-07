@@ -4,9 +4,7 @@ The user can enter input as if they were signing into a grocery store website.
 The user enters fake personal information. They are presented with a list of what items they can pick from the grocery store, before they choose whether to Add or Remove items from the digital grocery cart.
 Once the user is done, if they have anything in their cart it will print it to a file named SimulationShoppingList.txt, like a receipt.
 ## Program Features
-The program asks for fake name, fake email and fake phone number. The program makes you re-enter your email if it does not include the text @ and either .com or .net, it also does this for the phone number which has to be both 10 digits and only be made up of digits. The program ends if any input is a null value
-
-
+The program asks for fake name, fake email and fake phone number. The program makes you re-enter your name if you enter an empty value or just enter spaces. It does the same for your email if it does not include the text @ and either .com or .net, and the phone number if it is not 10 digits and includes values other than digits(like letters). The program ends if any input is a null value, which can happen if something like the input stream closing happens. There is a while loop that uses two functions to make sure that the user input matches the items from the grocery store and gives you a warning message and makes you re-enter your input if it doesnt match. There is a warning message that is displayed if you do not type Add, Delete or Exit in the while loop containing them. The program does not print the results to the SimulationShoppingList.txt file if you have a empty grocery cart, instead giving you a thank you message. If you have items in your grocery cart when exiting the program it organizes them if you have multiple of one item it will display text such as (x3) if you have three of a item, etcetera. It will then print it to the file SimulationShoppingList.txt or create the file if it doesnt exist.
 ## Skills Demonstrated
 - C# console application development
 - Object-Oriented Programming
