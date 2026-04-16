@@ -1,1 +1,1 @@
-Your shopping list purchase is: Chicken (x2) Fish (x1) Oranges (x1) Strawberries (x2) Water (x1) . Thank you for using this simulator.
+Your shopping list purchase is: Beef (x3) Chicken (x1) Bananas (x1) Water (x2) . Thank you for using this simulator.
